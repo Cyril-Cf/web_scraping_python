@@ -1,0 +1,96 @@
+/* Réinitialisation des styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0 50px;
+}
+
+/* Styles généraux */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 50px;
+}
+
+/* Styles spécifiques pour les listes */
+#book-list li,
+#author-list li,
+#category-list li {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#book-list li:hover,
+#author-list li:hover,
+#category-list li:hover {
+  transform: translateY(-5px);
+}
+
+#book-list li h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#book-list li p {
+  font-size: 1em;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+/* Style pour les liens */
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Style pour les titres */
+h1,
+h2,
+h3 {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Media query pour les écrans plus petits */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+}
